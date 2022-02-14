@@ -1,0 +1,14 @@
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.DB.deps.json
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.DB.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.DB.pdb
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.Mapping.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.Models.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.Mapping.pdb
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\bin\Debug\netcoreapp3.1\TFT.Models.pdb
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.csproj.AssemblyReference.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.AssemblyInfoInputs.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.AssemblyInfo.cs
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.csproj.CoreCompileInputs.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.DB\obj\Debug\netcoreapp3.1\TFT.DB.pdb

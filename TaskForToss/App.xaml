@@ -1,0 +1,151 @@
+﻿<Application x:Class="TaskForToss.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TaskForToss">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="txbForm" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="20"></Setter>
+                <Setter Property="Foreground" Value="DarkBlue"></Setter>
+                <Setter Property="Margin" Value="3"></Setter>
+                <Setter Property="TextAlignment" Value="Center"></Setter>
+                <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+            </Style>
+            <Style x:Key="txtForm" TargetType="TextBox">
+                <Setter Property="BorderBrush" Value="DarkBlue" ></Setter>
+                <Setter Property="Foreground" Value="DarkBlue"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+                <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+                <Setter Property="FontSize" Value="22"></Setter>
+            </Style>
+
+            <Style x:Key="btnBase" TargetType="Button">
+                <Setter Property="BorderBrush" Value="DarkBlue"></Setter>
+                <Setter Property="Foreground" Value="DarkBlue"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+                <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+                <Setter Property="FontSize" Value="20"></Setter>
+            </Style>
+
+            <Style TargetType="Button" x:Key="btnAdd" BasedOn="{StaticResource btnBase}">
+                <Setter Property="Command" Value="{Binding Save}" ></Setter>
+                <Setter Property="Content" Value="Əlavə et" ></Setter>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="2">
+                        <DataTrigger.Setters>
+                            <Setter Property="Content" Value="Yadda saxla"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="3">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="4">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="Button" x:Key="btnUpdate" BasedOn="{StaticResource btnBase}">
+                <Setter Property="Command" Value="{Binding Save}"/>
+                <Setter Property="Content" Value="Redaktə et"/>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="1">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="2">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="3">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="True"></Setter>
+                            <Setter Property="Content" Value="Yadda saxla"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="Button" x:Key="btnReject" BasedOn="{StaticResource btnBase}">
+                <Setter Property="Command" Value="{Binding Reject}"/>
+                <Setter Property="Content" Value="Ləğv et"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="Red"/>
+                    </Trigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="1">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="Button" x:Key="btnDelete" BasedOn="{StaticResource btnBase}">
+                <Setter Property="Command" Value="{Binding Delete}"/>
+                <Setter Property="Content" Value="Sil"/>
+                <Setter Property="IsEnabled" Value="False"></Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="Red"/>
+                    </Trigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="4">
+                        <DataTrigger.Setters>
+                            <Setter Property="IsEnabled" Value="True"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="Grid" x:Key="grdForm">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="1">
+                        <DataTrigger.Setters >
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="4">
+                        <DataTrigger.Setters >
+                            <Setter Property="IsEnabled" Value="False" ></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="ListView" x:Key="listView">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="2">
+                        <DataTrigger.Setters >
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CurrentSituation}" Value="3">
+                        <DataTrigger.Setters >
+                            <Setter Property="IsEnabled" Value="False"></Setter>
+                        </DataTrigger.Setters>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="{x:Type Button}" BasedOn="{StaticResource btnBase}" x:Key="btnExport">
+                <Setter Property="Width" Value="110"/>
+                <Setter Property="Height" Value="55"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+
+            <Style TargetType="{x:Type Button}" BasedOn="{StaticResource btnExport}" x:Key="btnExcel">
+                <Setter Property="Content" Value="Excel"/>
+                <Setter Property="Command" Value="{Binding ExportExcel}"/>
+                <Setter Property="Background" Value="Chartreuse"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

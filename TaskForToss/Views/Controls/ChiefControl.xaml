@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="TaskForToss.Views.Controls.ChiefControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TaskForToss.Views.Controls" xmlns:components="clr-namespace:TaskForToss.Views.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions>
+            <components:ControlHeader Grid.Row="0" ></components:ControlHeader>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" ></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <components:ControlButton Grid.Column="1" Grid.Row="1" ></components:ControlButton>
+
+                <Grid Grid.Column="0"  Background="White" Style="{StaticResource grdForm}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Ad:" Style="{StaticResource txbForm}"></TextBlock>
+                    <TextBlock  Grid.Row="1" Text="Telefon:" Style="{StaticResource txbForm}"></TextBlock>
+                    <TextBlock  Grid.Row="2" Text="Email:" Style="{StaticResource txbForm}"></TextBlock>
+                    <TextBlock  Grid.Row="1" Grid.Column="2" Text="Effective Date:" Style="{StaticResource txbForm}"></TextBlock>
+
+                    <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txtForm}" Text="{Binding CurrentChief.Name}"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource txtForm}" Text="{Binding CurrentChief.Phone}"></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource txtForm}" Text="{Binding CurrentChief.Email}"></TextBox>
+                    <Grid Grid.Row="1" Grid.Column="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <ComboBox FontSize="35" ItemsSource= "{Binding Path=Days}"  SelectedValue="{Binding Path=CurrentCook.EffectiveDate.Day}"  SelectedItem="{Binding Path= CurrentChief.Day}"  Grid.Column="0" Margin="5"></ComboBox>
+                        <ComboBox FontSize="35" ItemsSource="{Binding Path=Months}" SelectedItem="{Binding Path= CurrentChief.Month}" Grid.Column="1" Margin="5"></ComboBox>
+                        <ComboBox FontSize="35" ItemsSource="{Binding Path=Years}"  SelectedItem="{Binding Path= CurrentChief.Year}" Grid.Column="2" Margin="5"></ComboBox>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <ListView x:Name="ListView" Grid.Row="1"  
+                  ItemsSource="{Binding Chiefs}" 
+                  SelectedItem="{Binding  SelectedChief}" 
+                  Style="{StaticResource listView}" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn  Header="No" Width="50" DisplayMemberBinding="{Binding No}"  ></GridViewColumn>
+                    <GridViewColumn Header="Ad" Width="100" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Telefon" Width="150" DisplayMemberBinding="{Binding Phone}"></GridViewColumn>
+                    <GridViewColumn Header="Email" Width="150" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
+                    <GridViewColumn Header="Effective Date" Width="350" DisplayMemberBinding="{Binding EffectiveDate}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Grid.Row="2">
+            <components:ControlSearch ></components:ControlSearch>
+        </Grid>
+    </Grid>
+</UserControl>

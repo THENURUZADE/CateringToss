@@ -1,0 +1,10 @@
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\bin\Debug\netcoreapp3.1\TFT.Models.deps.json
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\bin\Debug\netcoreapp3.1\TFT.Models.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\bin\Debug\netcoreapp3.1\TFT.Models.pdb
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.csproj.AssemblyReference.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.AssemblyInfoInputs.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.AssemblyInfo.cs
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.csproj.CoreCompileInputs.cache
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.dll
+C:\Users\ALI\source\repos\TaskForToss\TFT.Models\obj\Debug\netcoreapp3.1\TFT.Models.pdb

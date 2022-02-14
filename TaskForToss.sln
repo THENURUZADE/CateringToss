@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskForToss", "TaskForToss\TaskForToss.csproj", "{3807DB51-FB03-4D2F-8451-00B902A90EE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFT.Mapping", "TFT.Mapping\TFT.Mapping.csproj", "{97C4560C-8B49-4E65-AC1F-8ABEC99FFB01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFT.Models", "TFT.Models\TFT.Models.csproj", "{27FAFC15-F8DB-409B-8590-77FC6C8EC48E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFT.DB", "TFT.DB\TFT.DB.csproj", "{25E7F07D-8B25-4C11-BCB5-F12BA76ACDAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositorySample", "RepositorySample\RepositorySample.csproj", "{2B9AC283-387B-4EFD-88BC-0B253B4D3B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IServiceSample", "IServiceSample\IServiceSample.csproj", "{C818C6B7-D778-43AA-BBFB-65A6C5038347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSample", "ServiceSample\ServiceSample.csproj", "{98A0E0FB-429F-423E-9D15-AF096EA641AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3807DB51-FB03-4D2F-8451-00B902A90EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3807DB51-FB03-4D2F-8451-00B902A90EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3807DB51-FB03-4D2F-8451-00B902A90EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3807DB51-FB03-4D2F-8451-00B902A90EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C4560C-8B49-4E65-AC1F-8ABEC99FFB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C4560C-8B49-4E65-AC1F-8ABEC99FFB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C4560C-8B49-4E65-AC1F-8ABEC99FFB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C4560C-8B49-4E65-AC1F-8ABEC99FFB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FAFC15-F8DB-409B-8590-77FC6C8EC48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FAFC15-F8DB-409B-8590-77FC6C8EC48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FAFC15-F8DB-409B-8590-77FC6C8EC48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FAFC15-F8DB-409B-8590-77FC6C8EC48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E7F07D-8B25-4C11-BCB5-F12BA76ACDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E7F07D-8B25-4C11-BCB5-F12BA76ACDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E7F07D-8B25-4C11-BCB5-F12BA76ACDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E7F07D-8B25-4C11-BCB5-F12BA76ACDAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9AC283-387B-4EFD-88BC-0B253B4D3B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9AC283-387B-4EFD-88BC-0B253B4D3B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9AC283-387B-4EFD-88BC-0B253B4D3B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9AC283-387B-4EFD-88BC-0B253B4D3B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C818C6B7-D778-43AA-BBFB-65A6C5038347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C818C6B7-D778-43AA-BBFB-65A6C5038347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C818C6B7-D778-43AA-BBFB-65A6C5038347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C818C6B7-D778-43AA-BBFB-65A6C5038347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A0E0FB-429F-423E-9D15-AF096EA641AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A0E0FB-429F-423E-9D15-AF096EA641AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A0E0FB-429F-423E-9D15-AF096EA641AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A0E0FB-429F-423E-9D15-AF096EA641AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B20449D-55D1-4579-B332-606EDA830189}
+	EndGlobalSection
+EndGlobal
